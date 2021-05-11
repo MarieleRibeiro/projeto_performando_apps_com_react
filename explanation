@@ -1,0 +1,21 @@
+# renderização de um componente
+3 formas
+->1 Pai para filho
+<Pai>
+  <Filho />
+</Pai>
+
+->2 Propriedade
+<Pai>
+  <Filho title="" />
+</Pai>
+
+->3 Hooks (useState, useContext, useReduce)
+
+=> Fluxo de renderização do React =
+
+Quando o React percebe que precisa renderizar de novo um componente seja por causa de uma renderização de pai para filho
+ou de propriedade ou uma renderização provida através dos hooks, ele vai
+->1. Gerar uma nova versão do componente que precisa ser renderizado
+->2. Comparar essa versão com a versão anterior ja salva na página
+->3. Se houverem alterações, o react "renderiza" essa nova versão em tela
